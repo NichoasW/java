@@ -1,0 +1,13 @@
+//Nick Wheat
+  public class NinetyNineBottles {
+     public static void main ( String [] args){
+             
+         int beers = 99;
+         while (beers>0){
+          System.out.println( beers+ " bottles of beer on the wall,");
+          System.out.println( beers + " bottles of beer.");
+          System.out.println("Take one down pass it around,");
+          System.out.println( --beers + " bottles of beer on the wall.");
+         }     
+ }
+}
