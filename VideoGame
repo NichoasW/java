@@ -1,0 +1,97 @@
+//Nick Wheat  
+import java.util.Scanner;
+
+public class VideoGame {
+   public static void main ( String [] args){
+      Scanner input = new Scanner( System.in );
+
+///Creates mailboxes
+int Batman=0;
+int Joker=0;
+int Difficulty;
+int Attack;
+
+//Background
+System.out.println ("Psychologically traumatized by the death of his parents, Batman has sworn to rid Gotham from the criminal elements\n that took his parents away from him. He is facing off against his arch-nemesis The Joker. The epic battle is taking\n place at the top of1 Wayne tower in the heart of Gotham. ");
+
+//Selects difficulty
+System.out.println (" ");
+System.out.println (" ");
+System.out.println ("Choose your Difficulty:");
+System.out.println (" ");
+System.out.println ("1: So easy even Superman could win");
+System.out.println ("2: Perfect for Robin");
+System.out.println ("3: Even Caped Crusader himself will struggle");
+
+Difficulty = input.nextInt();
+System.out.println( "Your Choice: "+Difficulty);
+
+
+//Sets heatlh based on Difficulty level
+   if (Difficulty == 1) {
+      Batman = 75;
+      Joker = 50;
+         System.out.println( "Batman has "+Batman+ " Health and the Joker has "+Joker+" Health"  );                                                                                                                                                                                                   
+}
+      else if  (Difficulty == 2){
+         Batman = 50;
+         Joker = 50;
+           System.out.println( "Batman has "+Batman+ " Health and the Joker has "+Joker+" Health"  );
+}
+      else if (Difficulty == 3){
+         Batman = 50;
+         Joker = 75;
+           System.out.println( "Batman has "+Batman+ " Health and the Joker has "+Joker+" Health"  );
+}
+
+//Attacks
+System.out.println (" ");
+System.out.println ("Choose your Attack:");
+System.out.println (" ");
+System.out.println ("1: Toss Batarang");
+System.out.println ("2: Fire Tranquilizer gun");
+System.out.println ("3: Unleash Sonic Devastator");
+
+Attack = input.nextInt();
+System.out.println("You chose "+Attack );
+
+
+   if (Attack == 1) {
+   Joker = Joker-5;
+    System.out.println( "Batman throws his Batarang at Joker.");
+    System.out.println("Joker has " +Joker+" Health remaining"  );
+}
+      else if (Attack == 2){
+         Joker = Joker-10;
+            System.out.println("Batman shoots Joker with a tranquilizer gun. Joker falls to the ground and Batman ");
+            System.out.println("jumps on top of him and punches him in the face.");
+            System.out.println("Joker has " +Joker+" Health remaining"  );
+}
+         else if (Attack == 3){
+            Joker = Joker-20;
+               System.out.println("Batman blasts Joker with the Sonic Devastator. Joker is blown backwards off the tower.");
+               System.out.println("Joker has " +Joker+" Health remaining"  );
+               System.out.println (" ");
+}
+    //Oppenents Attack
+int OppAttack = (int)(Math.random()*3)+1;
+   if (OppAttack == 1){
+      Batman= Batman-5;
+         System.out.println("Joker throws his Razor playing cards at Batman");
+         System.out.println (" ");
+         System.out.println("Batmans has "+Batman+ " Health remaining");
+}
+      else if (OppAttack == 2){
+         Batman= Batman-10;
+            System.out.println("Joker sprays acid flowers on Batman!");
+            System.out.println (" ");   
+            System.out.println("Batmans has "+Batman+ " Health remaining");
+}
+         else if (OppAttack == 3){
+            Batman= Batman-20;
+               System.out.println("Joker throws a Cyanide Pie!");
+               System.out.println (" ");
+               System.out.println("Batmans has "+Batman+ " Health remaining");
+}
+ }
+}
