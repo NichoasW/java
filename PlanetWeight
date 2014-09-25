@@ -1,0 +1,20 @@
+//Nick Wheat 
+     import java.util.Scanner;
+      public class PlanetWeight {
+       public static void main ( String [] args ) {
+       Scanner input= new Scanner(System.in);
+       
+      int weight;
+      double gravity;
+      double result;
+   System.out.println("How Much do you weigh? ");
+    weight = input.nextInt();
+   System.out.println("What is this planets gravity?" );
+    gravity = input.nextDouble();
+    
+    result=(gravity/9.8)*(weight);   
+   
+   System.out.println("You weigh " + result + " on this planet!");
+   
+   }
+}    
