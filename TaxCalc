@@ -1,0 +1,19 @@
+//Nick Wheat 
+     import java.util.Scanner;
+      public class TaxCalc {
+       public static void main ( String [] args ) {
+       Scanner input= new Scanner(System.in);
+       
+      int salary;
+      int taxRate;
+      double owed;
+   System.out.print("How Much have you made? ");
+    salary = input.nextInt();
+   System.out.println("What is your tax rate? " );
+    taxRate = input.nextInt();
+    
+    owed=(taxRate*.01)*(salary);   
+   
+   System.out.println("You owe $" + owed + " in taxes");
+   }
+}    
